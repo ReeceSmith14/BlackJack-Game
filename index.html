@@ -1,39 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!--charset, viewport width, title, bootstrap & stylesheet link established-->
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <!--charset, viewport width, title, bootstrap & stylesheet links-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Blackjack Game</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="assets/styles.css">
-	</head>
-	<body>
-		<!--Main game div which contains page title, dealer's hand, player's hand, game buttons and results of game-->
-		<div id="game" class="container">
-			<!--Game title-->
-			<h1 class="display-1">Blackjack</h1>
-			<!--Dealer's hand-->
-			<div id="dealer">
-				<h2 class="display-6">Dealer's Hand</h2>
-				<div id="dealer-hand"></div>
-			</div>
-			<!--Player's hand and game buttons-->
-			<div id="player">
-				<h2 class="display-6">Your Hand</h2>
-				<div id="player-hand"></div>
-				<!--Game buttons-->
-				<button class="btn btn-outline-warning" id="hit-button">Hit</button>
-				<button class="btn btn-outline-warning" id="double-button">Double</button>
-				<!--This game button is intially hidden and is only shown should the player have a pair of cards -->
-				<button class="btn btn-outline-warning" id="split-button" class="hidden">Split</button>
-				<button class="btn btn-outline-warning" id="stand-button">Stand</button>
-			</div>
-			<!--Results will be shown here-->
-			<div id="results"></div>
-		</div>
-		<!--Link to javascript and bootstrap-->
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-		<script src="assets/scripts/game.js"></script>
-	</body>
+    </head>
+    <body>
+        <!--Main game div which contains page title, dealer's hand, player's hand, game buttons and results of game-->
+        <div id="game" class="container">
+            <!--Game title-->
+            <h1 class="display-3">Blackjack</h1>
+            <!--Dealer's hand-->
+            <div class="row">
+                <div class="col-md-6" id="dealer">
+                    <h2 class="display-6">Dealer's Hand</h2>
+                    <div class="row" id="dealer-hand">
+                        <img class="col-6" src="assets/images/cards/2-C.png">
+                        <img class="col-6" src="assets/images/cards/BACK.png">
+                    </div>
+                </div>
+                <!--Player's hand-->
+                <div class="col-md-6" id="player">
+                    <h2 class="display-6">Your Hand</h2>
+                    <div class="row" id="player-hand">
+                        <img class="col-6" src="assets/images/cards/2-C.png">
+                        <img class="col-6" src="assets/images/cards/2-C.png">
+                    </div>
+                </div>
+            </div>
+            <!--Game buttons-->
+            <div id="game-buttons">
+                <button class="btn btn-outline-warning" id="hit-button">Hit</button>
+                <button class="btn btn-outline-warning" id="double-button">Double</button>
+                <!--This game button is intially hidden and is only shown should the player have a pair of cards -->
+                <button class="btn btn-outline-warning" id="split-button">Split</button>
+                <button class="btn btn-outline-warning" id="stand-button">Stand</button>
+            </div>
+            <!--Results will be shown here-->
+            <div id="results"></div>
+        </div>
+        <!--Link to javascript and bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="assets/scripts/game.js"></script>
+    </body>
 </html>
