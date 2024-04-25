@@ -48,11 +48,15 @@ h3 {
 
 /*Spacing of the game buttons increased*/
 #game-buttons {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 /*Spacing for the results*/
 #win-or-lose-heading{
   margin-top:5px;
-  margin-bottom:30px;
+  margin-top:30px;
+}
+/*Deal button spacing*/
+#deal-button{
+  margin-bottom:15px;
 }
