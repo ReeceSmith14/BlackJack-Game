@@ -21,7 +21,7 @@
                 <div class="col-md-6" id="dealer">
                     <h2 class="display-6">Dealer's Hand</h2>
                     <div class="row" id="dealer-hand">
-                        <img class="col-6" src="assets/images/cards/2-C.png">
+                        <img class="col-6" src="assets/images/cards/BACK.png">
                         <img class="col-6" src="assets/images/cards/BACK.png">
                     </div>
                 </div>
@@ -29,21 +29,26 @@
                 <div class="col-md-6" id="player">
                     <h2 class="display-6">Your Hand</h2>
                     <div class="row" id="player-hand">
-                        <img class="col-6" src="assets/images/cards/2-C.png">
-                        <img class="col-6" src="assets/images/cards/2-C.png">
+                        <img class="col-6" src="assets/images/cards/BACK.png">
+                        <img class="col-6" src="assets/images/cards/BACK.png">
                     </div>
                 </div>
             </div>
             <!--Game buttons-->
             <div id="game-buttons">
                 <button class="btn btn-outline-warning" id="hit-button">Hit</button>
-                <button class="btn btn-outline-warning" id="double-button">Double</button>
                 <!--This game button is intially hidden and is only shown should the player have a pair of cards -->
                 <button class="btn btn-outline-warning" id="split-button">Split</button>
                 <button class="btn btn-outline-warning" id="stand-button">Stand</button>
             </div>
             <!--Results will be shown here-->
-            <div id="results"></div>
+            <div id="results">
+            	<h3 class="display-6 " id="win-or-lose-heading">WIN</h3>
+            </div>
+            <!--Deal button-->
+            <div id="start-buttons">
+            	<button class="btn btn-outline-warning" id="deal-button">Deal</button>
+            </div>
         </div>
         <!--Link to javascript and bootstrap-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
