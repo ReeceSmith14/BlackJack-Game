@@ -1,27 +1,19 @@
+
+//Global varibles
 let playerHand = [];
 let dealerHand = [];
 let playerTotal = 0;
 let dealerTotal = 0;
 const targetTotal = 21;
 let deck = [];
+let dealerFacedown = [];
 const blankCard = {
     value : 0,
     suit : null,
     image: `assets/images/cards/BACK.png`
 };
-let dealerFacedown = [];
 
-// The Fisher Yates Method used to suffle deck
-
-shuffleDeck = (deck) => { 
-        for (let i = deck.length - 1; i >= 0; i--) {
-            let randomNumber = Math.floor(Math.random() * (i + 1));
-            let temp = deck[i];
-            deck[i] = deck[randomNumber];
-            deck[randomNumber] = temp;
-        };
-    };
-
+//Function to create the cards and call the shuffle deck function
 
 createDeck = () => {
     const suits = ["C", "H", "S", "D"];
@@ -41,6 +33,19 @@ createDeck = () => {
     };
 
 
+// Shuffle deck fucntion which was made using the Fisher Yates Method
+
+shuffleDeck = deck => { 
+        for (let i = deck.length - 1; i >= 0; i--) {
+            let randomNumber = Math.floor(Math.random() * (i + 1));
+            let temp = deck[i];
+            deck[i] = deck[randomNumber];
+            deck[randomNumber] = temp;
+        };
+    };
+
+// Function to start the game
+// Cards are delt and if the play has 21 the stand function is called
 
 startGame = () => {
     createDeck();
@@ -57,18 +62,17 @@ startGame = () => {
     }
 };
 
+// Function to give the player another card
+// If the player's hand is > than 21 the determineWinner function is called
 
 hit = () => {
     playerHand.push(deck.shift());
 
+    // Check if player is dealt > than 21
     playerTotal = calculateHandTotal(playerHand);
     if (playerTotal > targetTotal) {
         determineWinner();
     }
-};
-
-stand = () => {
-    
 };
 
 // Function to handle player standing
@@ -89,42 +93,36 @@ stand = () => {
 
     // Determine winner and end game
     determineWinner();
-    playerStood = true;
 };
 
-// Variable to track whether the player has stood
-let playerStood = false;
-
-// Function to handle player hitting
-hit = () => {
-    // If player has already stood, do nothing
-    if (playerStood) return;
-
-    playerHand.push(deck.shift());
-};
 
 // Function to calculate hand total
-calculateHandTotal = (hand) => {
+calculateHandTotal = hand => {
     let total = 0;
-    let numAces = 0;
+    let aces = 0;
 
+    // For loop to add up the values of face and number cards
+    
     for (let card of hand) {
         if (card.value === 'A') {
-            numAces++;
-        } else if (['J', 'Q', 'K'].includes(card.value)) {
+            aces++;
+        } else if (card.value === "J" || card.value === "Q" || card.value === "K") {
             total += 10;
         } else {
-            total += parseInt(card.value);
-        }
-    }
+            total += card.value;
+        };
+    };
 
-    for (let i = 0; i < numAces; i++) {
-        if (total + 11 <= targetTotal - numAces + i + 1) {
+    // For loop to add up the ace cards
+    // Aces are either = to 1 or 11 depending on what benefits the player more
+
+    for (let i = 0; i < aces; i++) {
+        if (total + 11 <= targetTotal) {
             total += 11;
         } else {
             total += 1;
-        }
-    }
+        };
+    };
 
     return total;
 };
@@ -150,7 +148,6 @@ determineWinner = () => {
     }
 };
 
-// Call startGame function to begin the game
-startGame();
 
 
+s
