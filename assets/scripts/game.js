@@ -209,3 +209,5 @@ determineWinner = () => {
         $("#win-or-lose-heading").text("It's a tie!");
     }
 };
+
+module.exports = game;
