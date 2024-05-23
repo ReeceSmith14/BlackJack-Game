@@ -1,6 +1,16 @@
 // Imported modules for testing
 const { playerHand, playerTotal, dealerHand, dealerTotal, targetTotal, deck, blankCard } = require('../game');
 
+// Mocking the entire DOM for testing
+
+beforeEach(() =>{
+  let fs = require("fs");
+  let fileContents = fs.readFileSync("index.html", "utf-8");
+  document.open();
+  document.write(fileContents);
+  document.close();
+});
+
 describe("Global game variables should be correctly initialised", () => {
   test("playerHand should be defined and be an empty array", () => {
 	expect(playerHand).toEqual([]);

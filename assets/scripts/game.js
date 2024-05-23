@@ -209,4 +209,5 @@ determineWinner = () => {
     }
 };
 
-module.exports = game;
+// Modules exported to game.test.js
+module.exports = { playerHand, playerTotal, dealerHand, dealerTotal, targetTotal, deck, blankCard };
