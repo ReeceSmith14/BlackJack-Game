@@ -134,7 +134,9 @@ $("#stand-button").click(() => {
     // Add the second dealer card in place of the blank card placeholder
     $("#dealer-hand").append(`<img class="col-2 col-md-3" src="${dealerHand[1].image}">`);
 
-    
+     // Calculate dealer's total
+    dealerTotal = calculateHandTotal(dealerHand);
+
     // Dealer hits until they reach a total of 17 or higher
     while (dealerTotal < 17) {
         dealerHand.push(deck.shift());
@@ -142,9 +144,6 @@ $("#stand-button").click(() => {
         $("#dealer-hand").append(`<img class="col-2 col-md-3" src="${dealerHand[lastCard].image}">`);
         dealerTotal = calculateHandTotal(dealerHand);
     }
-
-    // Calculate dealer's total
-    dealerTotal = calculateHandTotal(dealerHand);
 
      // Add dealer score to index
     $("#dealer-score").text(`Score: ${dealerTotal}`);
