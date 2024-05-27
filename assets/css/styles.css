@@ -20,11 +20,6 @@ h3 {
   font-style: normal;
 }
 
-/*Hide the split button as this is only required for pairs*/
-#split-button {
-  display: none;
-}
-
 /*Reduce image size and align centrally*/
 #player-hand img,
 #dealer-hand img {
@@ -39,13 +34,6 @@ h3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-/*Boarder added to dealer and player sections*/
-/*
-#dealer,
-#player {
-  border: 1px solid gold;
-}*/
 
 /*Spacing of the game buttons increased*/
 #game-buttons {
