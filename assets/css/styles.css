@@ -13,7 +13,7 @@ h1 {
   font-style: normal;
 }
 h2,
-button, 
+button,
 h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -41,44 +41,42 @@ h3 {
 }
 
 /*Spacing for the results*/
-#win-or-lose-heading{
-  margin-top:5px;
-  margin-top:30px;
+#win-or-lose-heading {
+  margin-top: 5px;
+  margin-top: 30px;
 }
 
 /*Deal button spacing*/
 #deal-button,
 #hit-button,
-#stand-button{
-  margin-bottom:15px;
-  font-size:1.5rem;
+#stand-button {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 
 /*Score's size increased*/
 #player-score,
-#dealer-score{
-  font-size:1.5rem;
-} 
+#dealer-score {
+  font-size: 1.5rem;
+}
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 767px) {
   #player-hand img,
-  #dealer-hand img{
-    width:30vw;
+  #dealer-hand img {
+    width: 30vw;
   }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   #player-hand img,
-  #dealer-hand img{
-    width:15vw;
+  #dealer-hand img {
+    width: 15vw;
   }
   #player-score,
   #dealer-score,
   #deal-button,
   #hit-button,
-  #stand-button{
-    font-size:2rem;
-} 
+  #stand-button {
+    font-size: 2rem;
+  }
 }
-
-
