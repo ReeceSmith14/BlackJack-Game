@@ -60,10 +60,24 @@ h3 {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 575px) {
   #player-hand img,
   #dealer-hand img {
     width: 30vw;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  #player-hand img,
+  #dealer-hand img {
+    width: 20vw;
+  }
+}
+
+@media only screen and (min-width: 676px) {
+  #player-hand img,
+  #dealer-hand img {
+    width: 15vw;
   }
 }
 
