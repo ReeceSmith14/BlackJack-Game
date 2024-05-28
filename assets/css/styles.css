@@ -59,3 +59,26 @@ h3 {
 #dealer-score{
   font-size:1.5rem;
 } 
+
+@media only screen and (max-width: 767px){
+  #player-hand img,
+  #dealer-hand img{
+    width:30vw;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  #player-hand img,
+  #dealer-hand img{
+    width:15vw;
+  }
+  #player-score,
+  #dealer-score,
+  #deal-button,
+  #hit-button,
+  #stand-button{
+    font-size:2rem;
+} 
+}
+
+
