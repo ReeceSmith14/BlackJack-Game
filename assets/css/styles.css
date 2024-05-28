@@ -54,6 +54,11 @@ h3 {
   font-size: 1.5rem;
 }
 
+#hit-button,
+#stand-button{
+  display:none;
+}
+
 /*Score's size increased*/
 #player-score,
 #dealer-score {

@@ -11,9 +11,6 @@ const blankCard = {
     suit : null,
     image: `assets/images/cards/BACK.png`
 };
-// Hide hit and stand buttons until the deal button is pressed
-$("#hit-button").hide();
-$("#stand-button").hide();
 
 //Function to create the cards and call the shuffle deck function
 
@@ -33,7 +30,6 @@ createDeck = () => {
         shuffleDeck(deck); 
         return deck;
     };
-
 
 // Shuffle deck fucntion which was made using the Fisher Yates Method
 
@@ -76,15 +72,15 @@ $("#deal-button").click(() => {
 
     // Card images are added to the hand divs in the index.html file
     // First dealer card is added
-    $("#dealer-hand").append(`<img class="col-2 col-md-3" src="${dealerHand[0].image}">`);
+    $("#dealer-hand").append(`<img class="col-md-3" src="${dealerHand[0].image}">`);
     
     // Blank card image added as a placeholder for the true card
 
-    $("#dealer-hand").append(`<img class="col-2 col-md-3 blank-card" src="${blankCard.image}">`);
+    $("#dealer-hand").append(`<img class="col-md-3 blank-card" src="${blankCard.image}">`);
 
     // Add both players cards to index.html
     for (let i = 0; i < 2; i++){
-            $("#player-hand").append(`<img class="col-2 col-md-3" src="${playerHand[i].image}">`);
+            $("#player-hand").append(`<img class="col-md-3" src="${playerHand[i].image}">`);
     };
     
     
@@ -109,7 +105,7 @@ $("#hit-button").click(() => {
     playerHand.push(deck.shift());
 
     let lastCard = playerHand.length - 1;
-    $("#player-hand").append(`<img class="col-2 col-md-3" src="${playerHand[lastCard].image}">`);
+    $("#player-hand").append(`<img class="col-md-3" src="${playerHand[lastCard].image}">`);
 
     // Check if player is dealt > than 21
     playerTotal = calculateHandTotal(playerHand);
@@ -132,7 +128,7 @@ $("#stand-button").click(() => {
     $(".blank-card").remove();
 
     // Add the second dealer card in place of the blank card placeholder
-    $("#dealer-hand").append(`<img class="col-2 col-md-3" src="${dealerHand[1].image}">`);
+    $("#dealer-hand").append(`<img class="col-md-3" src="${dealerHand[1].image}">`);
 
      // Calculate dealer's total
     dealerTotal = calculateHandTotal(dealerHand);
@@ -141,7 +137,7 @@ $("#stand-button").click(() => {
     while (dealerTotal < 17) {
         dealerHand.push(deck.shift());
         let lastCard = dealerHand.length - 1;
-        $("#dealer-hand").append(`<img class="col-2 col-md-3" src="${dealerHand[lastCard].image}">`);
+        $("#dealer-hand").append(`<img class="col-md-3" src="${dealerHand[lastCard].image}">`);
         dealerTotal = calculateHandTotal(dealerHand);
     }
 
