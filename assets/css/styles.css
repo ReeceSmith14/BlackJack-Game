@@ -24,7 +24,7 @@ h3 {
 #player-hand img,
 #dealer-hand img {
   justify-content: center;
-  width:100px;
+  width: 100px;
 }
 
 /*Centrally align dealer & player hands and increase spacing to other elements*/
@@ -55,9 +55,10 @@ h3 {
   font-size: 1.5rem;
 }
 
+/*Make sure the hit and stand buttons are intially hidden*/
 #hit-button,
-#stand-button{
-  display:none;
+#stand-button {
+  display: none;
 }
 
 /*Score's size increased*/
@@ -66,11 +67,10 @@ h3 {
   font-size: 1.5rem;
 }
 
-
+/*Media queries to keep the card images, scores and buttons correctly sized*/
 @media only screen and (min-width: 576px) {
   #player-hand img,
-  #dealer-hand img
-  {
+  #dealer-hand img {
     width: 120px;
   }
 }
@@ -92,12 +92,12 @@ h3 {
     width: 250px;
   }
   #player-score,
-#dealer-score{
-  font-size:3rem;
-}
-#deal-button,
-#hit-button,
-#stand-button{
-  font-size:3rem;
-}
+  #dealer-score {
+    font-size: 3rem;
+  }
+  #deal-button,
+  #hit-button,
+  #stand-button {
+    font-size: 3rem;
+  }
 }

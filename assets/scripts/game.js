@@ -204,6 +204,3 @@ determineWinner = () => {
         $("#win-or-lose-heading").text("It's a tie!");
     }
 };
-
-// Modules exported to game.test.js
-module.exports = { playerHand, playerTotal, dealerHand, dealerTotal, targetTotal, deck, blankCard };
