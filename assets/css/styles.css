@@ -24,6 +24,7 @@ h3 {
 #player-hand img,
 #dealer-hand img {
   justify-content: center;
+  width:100px;
 }
 
 /*Centrally align dealer & player hands and increase spacing to other elements*/
@@ -65,37 +66,38 @@ h3 {
   font-size: 1.5rem;
 }
 
-@media only screen and (max-width: 575px) {
-  #player-hand img,
-  #dealer-hand img {
-    width: 30vw;
-  }
-}
 
 @media only screen and (min-width: 576px) {
   #player-hand img,
-  #dealer-hand img {
-    width: 20vw;
+  #dealer-hand img
+  {
+    width: 120px;
   }
 }
-
-@media only screen and (min-width: 676px) {
+@media only screen and (min-width: 700px) {
   #player-hand img,
   #dealer-hand img {
-    width: 15vw;
+    width: 120px;
   }
 }
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1000px) {
   #player-hand img,
   #dealer-hand img {
-    width: 15vw;
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  #player-hand img,
+  #dealer-hand img {
+    width: 250px;
   }
   #player-score,
-  #dealer-score,
-  #deal-button,
-  #hit-button,
-  #stand-button {
-    font-size: 2rem;
-  }
+#dealer-score{
+  font-size:3rem;
+}
+#deal-button,
+#hit-button,
+#stand-button{
+  font-size:3rem;
+}
 }
