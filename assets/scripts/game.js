@@ -1,19 +1,53 @@
-
-//Global varibles
+/**
+ * Array to hold the cards in the player's hand.
+ * @type {Array}
+ */
 let playerHand = [];
+
+/**
+ * Array to hold the cards in the dealer's hand.
+ * @type {Array}
+ */
 let dealerHand = [];
+
+/**
+ * The total value of cards in the player's hand.
+ * @type {number}
+ */
 let playerTotal = 0;
+
+/**
+ * The total value of cards in the dealer's hand.
+ * @type {number}
+ */
 let dealerTotal = 0;
+
+/**
+ * The target total value for winning the game.
+ * @type {number}
+ */
 const targetTotal = 21;
+
+/**
+ * Array to hold the deck of cards.
+ * @type {Array}
+ */
 let deck = [];
+
+/**
+ * A blank card object used for displaying the back of a card.
+ * @type {{value: number, suit: null, image: string}}
+ */
 const blankCard = {
     value : 0,
     suit : null,
     image: `assets/images/cards/BACK.png`
 };
 
-//Function to create the cards and call the shuffle deck function
-
+/**
+ * Creates a deck of cards and shuffles it.
+ * @returns {Array} The shuffled deck of cards.
+ */
 createDeck = () => {
     const suits = ["C", "H", "S", "D"];
     const values = [2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K", "A"];
@@ -31,8 +65,10 @@ createDeck = () => {
         return deck;
     };
 
-// Shuffle deck fucntion which was made using the Fisher Yates Method
-
+/**
+ * Shuffles the given deck of cards using the Fisher Yates method.
+ * @param {Array} deck - The deck of cards to be shuffled.
+ */
 shuffleDeck = deck => { 
         for (let i = deck.length - 1; i >= 0; i--) {
             let randomNumber = Math.floor(Math.random() * (i + 1));
@@ -42,9 +78,9 @@ shuffleDeck = deck => {
         };
     };
 
-// Function to start the game when the "Deal" button is clicked
-// Cards are delt and if the player has 21 the stand function is called
-
+/**
+ * Starts the game when the "Deal" button is clicked.
+ */
 $("#deal-button").click(() => {
 
     // Show hit and stand button if it is hidden
@@ -94,12 +130,11 @@ $("#deal-button").click(() => {
     // Add player score to index
     $("#player-score").text(`Score: ${playerTotal}`);
 
-
 });
 
-// Function to give the player another card
-// If the player's hand is > than 21 the determineWinner function is called
-
+/**
+ * Gives the player another card when the "Hit" button is clicked.
+ */
 $("#hit-button").click(() => {
 
     playerHand.push(deck.shift());
@@ -118,7 +153,9 @@ $("#hit-button").click(() => {
 
 });
 
-// Function to handle player standing
+/**
+ * Handles the player standing when the "Stand" button is clicked.
+ */
 $("#stand-button").click(() => {
 
     // Hide the hit button
@@ -149,7 +186,11 @@ $("#stand-button").click(() => {
 });
 
 
-// Function to calculate hand total
+/**
+ * Calculates the total value of the hand.
+ * @param {Array} hand - The hand of cards.
+ * @returns {number} The total value of the hand.
+ */
 calculateHandTotal = hand => {
     let total = 0;
     let aces = 0;
@@ -180,7 +221,9 @@ calculateHandTotal = hand => {
     return total;
 };
 
-// Function to determine the winner and end the game
+/**
+ * Determines the winner and ends the game.
+ */
 determineWinner = () => {
     // Calculate player's total
     playerTotal = calculateHandTotal(playerHand);
@@ -203,4 +246,22 @@ determineWinner = () => {
         // It's a tie
         $("#win-or-lose-heading").text("It's a tie!");
     }
+};
+
+/**
+ * Exports all necessary functions and variables for the game.
+ * @module
+ */
+module.exports = {
+    playerHand,
+    dealerHand,
+    playerTotal,
+    dealerTotal,
+    targetTotal,
+    deck,
+    blankCard,
+    createDeck,
+    shuffleDeck,
+    calculateHandTotal,
+    determineWinner
 };
