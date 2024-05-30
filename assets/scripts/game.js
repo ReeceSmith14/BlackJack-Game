@@ -76,6 +76,7 @@ shuffleDeck = deck => {
             deck[i] = deck[randomNumber];
             deck[randomNumber] = temp;
         };
+        return deck;
     };
 
 /**
@@ -123,8 +124,10 @@ $("#deal-button").click(() => {
 
     // Check if player is dealt 21
     playerTotal = calculateHandTotal(playerHand);
+    
     if (playerTotal === targetTotal) {
-        stand();
+         // Hide the hit button
+        $("#hit-button").hide();
     }
 
     // Add player score to index
