@@ -81,8 +81,8 @@ shuffleDeck = deck => {
 
 /**
  * Starts the game when the "Deal" button is clicked.
- */
-$("#deal-button").click(() => {
+ */  
+let deal = () => {
 
     // Show hit and stand button if it is hidden
     $("#hit-button").show();
@@ -133,12 +133,14 @@ $("#deal-button").click(() => {
     // Add player score to index
     $("#player-score").text(`Score: ${playerTotal}`);
 
-});
+};
+
+$("#deal-button").click(deal);
 
 /**
  * Gives the player another card when the "Hit" button is clicked.
  */
-$("#hit-button").click(() => {
+let hit = () => {
 
     playerHand.push(deck.shift());
 
@@ -154,12 +156,14 @@ $("#hit-button").click(() => {
     // Update players score
     $("#player-score").text(`Score: ${playerTotal}`);
 
-});
+};
+
+$("#hit-button").click(hit);
 
 /**
  * Handles the player standing when the "Stand" button is clicked.
  */
-$("#stand-button").click(() => {
+let stand = () => {
 
     // Hide the hit button
     $("#hit-button").hide();
@@ -186,7 +190,9 @@ $("#stand-button").click(() => {
 
     // Determine winner and end game
     determineWinner();
-});
+};
+
+$("#stand-button").click(stand);
 
 
 /**
@@ -266,5 +272,8 @@ module.exports = {
     createDeck,
     shuffleDeck,
     calculateHandTotal,
-    determineWinner
+    determineWinner,
+    deal,
+    hit,
+    stand
 };

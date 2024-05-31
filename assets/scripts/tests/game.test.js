@@ -9,7 +9,10 @@ const {
   createDeck,
   shuffleDeck,
   calculateHandTotal,
-  determineWinner
+  determineWinner,
+  deal,
+  hit,
+  stand
 } = require("../game");
 
 describe("Global variables should be initialised correctly", () => {
