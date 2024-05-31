@@ -119,8 +119,6 @@ let deal = () => {
     for (let i = 0; i < 2; i++){
             $("#player-hand").append(`<img class="col-md-3" src="${playerHand[i].image}">`);
     };
-    
-    
 
     // Check if player is dealt 21
     playerTotal = calculateHandTotal(playerHand);

@@ -176,20 +176,16 @@ describe("The deal button works as intended", () => {
     </section>
 
     <!--Game buttons-->
-    <section id="game-buttons">
-      <button class="btn btn-outline-warning" id="hit-button">Hit</button>
-      <button class="btn btn-outline-warning" id="stand-button">Stand</button>
-    </section>
-
-    <!--Deal button-->
-    <section id="start-buttons">
-      <button class="btn btn-outline-warning" id="deal-button">Deal</button>
-    </section>
-      `;
+      <section id="game-buttons">
+        <button class="btn btn-outline-warning" id="hit-button">Hit</button>
+        <button class="btn btn-outline-warning" id="stand-button">Stand</button>
+      </section>`;
   });
 
   test("Hit and stand buttons are shown after clicking the deal button", () => {
-      $("#deal-button").click();
+      $("#hit-button").css("display","none");
+      $("#stand-button").css("display", "none");
+      deal();
       expect($("#hit-button").css("display")).not.toBe("none");
       expect($("#stand-button").css("display")).not.toBe("none");
   });
@@ -198,11 +194,49 @@ describe("The deal button works as intended", () => {
       $("#dealer-score").text("Score: 20");
       $("#win-or-lose-heading").text("You win!");
       
-      $("#deal-button").click();
+      deal();
 
       expect($("#dealer-score").text()).toBe("Score: ");
       expect($("#win-or-lose-heading").text()).toBe("");
   });
 
-  
+  test("Player and dealer's hands should be emptied and refilled with new cards", () =>{
+    dealerHand.push({value: 0,
+      suit: null,
+      image: 'assets/images/cards/BACK.png'},{value: 0,
+        suit: null,
+        image: 'assets/images/cards/BACK.png'});
+    playerHand.push({value: 0,
+      suit: null,
+      image: 'assets/images/cards/BACK.png'},{value: 0,
+        suit: null,
+        image: 'assets/images/cards/BACK.png'})
+
+    deal();
+
+    expect(dealerHand.length).toBe(2);
+    expect(playerHand.length).toBe(2);
+    expect(dealerHand[0].image).not.toBe('`assets/images/cards/BACK.png`');
+    expect(playerHand[0].image).not.toBe('`assets/images/cards/BACK.png`');
+    expect(dealerHand[1].image).not.toBe('`assets/images/cards/BACK.png`');
+    expect(playerHand[1].image).not.toBe('`assets/images/cards/BACK.png`');
+    expect($("#player-hand").children.length).toBe(2);
+    expect($("#dealer-hand").children.length).toBe(2);
+    expect($("#player-hand").innerHTML).not.toBe(`<img class="col-md-3" src="assets/images/cards/BACK.png">
+    <img class="col-md-3" src="assets/images/cards/BACK.png">`);
+    expect($("#dealer-hand").innerHTML).not.toBe(`<img class="col-md-3" src="assets/images/cards/BACK.png">
+    <img class="col-md-3" src="assets/images/cards/BACK.png">`);
+  });
+  test("If the player is dealt 21 does the hit button disappear", () => {
+     jest.spyOn(global, 'calculateHandTotal').mockReturnValue(21);
+     deal();
+     expect($("#hit-button").css("display")).toBe("none");
+});
+  test("Player score should be added to the DOM", () => {
+     jest.spyOn(global, 'calculateHandTotal').mockReturnValue(21);
+     deal();
+     expect($("#player-score").text()).toBe(`Score: 21`);
+  });
+    
+
 });

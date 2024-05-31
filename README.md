@@ -16,3 +16,5 @@
 - Refresher on testing wih the Jest framework provided by [freeCodeCamp.org](https://www.freecodecamp.org/) in this [YouTube video](https://www.youtube.com/watch?v=IPiUDhwnZxA)
 
 - Reminder of matchers provided by [Jest.io](https://jestjs.io/docs/using-matchers)
+
+- Reminder of mock functions by [Jest.io](https://jestjs.io/docs/mock-functions)
