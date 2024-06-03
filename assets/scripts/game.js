@@ -1,48 +1,15 @@
-/**
- * Array to hold the cards in the player's hand.
- * @type {Array}
- */
 let playerHand = [];
-
-/**
- * Array to hold the cards in the dealer's hand.
- * @type {Array}
- */
 let dealerHand = [];
-
-/**
- * The total value of cards in the player's hand.
- * @type {number}
- */
 let playerTotal = 0;
-
-/**
- * The total value of cards in the dealer's hand.
- * @type {number}
- */
 let dealerTotal = 0;
-
-/**
- * The target total value for winning the game.
- * @type {number}
- */
 const targetTotal = 21;
-
-/**
- * Array to hold the deck of cards.
- * @type {Array}
- */
 let deck = [];
-
-/**
- * A blank card object used for displaying the back of a card.
- * @type {{value: number, suit: null, image: string}}
- */
 const blankCard = {
-    value : 0,
-    suit : null,
+    value: 0,
+    suit: null,
     image: `assets/images/cards/BACK.png`
 };
+
 
 /**
  * Creates a deck of cards and shuffles it.
@@ -59,29 +26,29 @@ createDeck = () => {
                 image: `assets/images/cards/${value}-${suit}.png`
             };
             deck.push(card);
-            };
         };
-        shuffleDeck(deck); 
-        return deck;
     };
+    shuffleDeck(deck);
+    return deck;
+};
 
 /**
  * Shuffles the given deck of cards using the Fisher Yates method.
  * @param {Array} deck - The deck of cards to be shuffled.
  */
-shuffleDeck = deck => { 
-        for (let i = deck.length - 1; i >= 0; i--) {
-            let randomNumber = Math.floor(Math.random() * (i + 1));
-            let temp = deck[i];
-            deck[i] = deck[randomNumber];
-            deck[randomNumber] = temp;
-        };
-        return deck;
+shuffleDeck = deck => {
+    for (let i = deck.length - 1; i >= 0; i--) {
+        let randomNumber = Math.floor(Math.random() * (i + 1));
+        let temp = deck[i];
+        deck[i] = deck[randomNumber];
+        deck[randomNumber] = temp;
     };
+    return deck;
+};
 
 /**
  * Starts the game when the "Deal" button is clicked.
- */  
+ */
 let deal = () => {
 
     // Show hit and stand button if it is hidden
@@ -105,26 +72,26 @@ let deal = () => {
     dealerHand.push(deck.shift());
     playerHand.push(deck.shift());
     dealerHand.push(deck.shift());
-    
+
 
     // Card images are added to the hand divs in the index.html file
     // First dealer card is added
     $("#dealer-hand").append(`<img class="col-md-3" src="${dealerHand[0].image}">`);
-    
+
     // Blank card image added as a placeholder for the true card
 
     $("#dealer-hand").append(`<img class="col-md-3 blank-card" src="${blankCard.image}">`);
 
     // Add both players cards to index.html
-    for (let i = 0; i < 2; i++){
-            $("#player-hand").append(`<img class="col-md-3" src="${playerHand[i].image}">`);
+    for (let i = 0; i < 2; i++) {
+        $("#player-hand").append(`<img class="col-md-3" src="${playerHand[i].image}">`);
     };
 
     // Check if player is dealt 21
     playerTotal = calculateHandTotal(playerHand);
-    
+
     if (playerTotal === targetTotal) {
-         // Hide the hit button
+        // Hide the hit button
         $("#hit-button").hide();
     }
 
@@ -165,14 +132,14 @@ let stand = () => {
 
     // Hide the hit button
     $("#hit-button").hide();
-    
+
     // Remove blank card placeholder image
     $(".blank-card").remove();
 
     // Add the second dealer card in place of the blank card placeholder
     $("#dealer-hand").append(`<img class="col-md-3" src="${dealerHand[1].image}">`);
 
-     // Calculate dealer's total
+    // Calculate dealer's total
     dealerTotal = calculateHandTotal(dealerHand);
 
     // Dealer hits until they reach a total of 17 or higher
@@ -183,7 +150,7 @@ let stand = () => {
         dealerTotal = calculateHandTotal(dealerHand);
     }
 
-     // Add dealer score to index
+    // Add dealer score to index
     $("#dealer-score").text(`Score: ${dealerTotal}`);
 
     // Determine winner and end game
@@ -203,7 +170,7 @@ calculateHandTotal = hand => {
     let aces = 0;
 
     // For loop to add up the values of face and number cards
-    
+
     for (let card of hand) {
         if (card.value === 'A') {
             aces++;
@@ -253,25 +220,4 @@ determineWinner = () => {
         // It's a tie
         $("#win-or-lose-heading").text("It's a tie!");
     }
-};
-
-/**
- * Exports all necessary functions and variables for the game.
- * @module
- */
-module.exports = {
-    playerHand,
-    dealerHand,
-    playerTotal,
-    dealerTotal,
-    targetTotal,
-    deck,
-    blankCard,
-    createDeck,
-    shuffleDeck,
-    calculateHandTotal,
-    determineWinner,
-    deal,
-    hit,
-    stand
 };

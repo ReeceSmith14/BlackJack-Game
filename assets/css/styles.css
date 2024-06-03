@@ -1,33 +1,37 @@
-/*Page colours and align all items on page*/
+/* === Page Colors and Alignment === */
+/* Set background color, text color, and center-align all text */
 body {
   text-align: center;
   background-color: black;
   color: gold;
 }
 
-/*Fonts for the h1,h2 and buttons*/
+/* === Font Styles === */
+/* Fonts for h1, h2, h3, and buttons */
 h1 {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: <weight>; /* Specify appropriate font weight */
   font-style: normal;
 }
 h2,
-button,
-h3 {
+h3,
+button {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-/*Reduce image size and align centrally*/
+/* === Image Styles === */
+/* Reduce image size and center-align images in player and dealer hands */
 #player-hand img,
 #dealer-hand img {
   justify-content: center;
   width: 100px;
 }
 
-/*Centrally align dealer & player hands and increase spacing to other elements*/
+/* === Hand Container Styles === */
+/* Center-align dealer and player hands and add vertical spacing */
 #player-hand,
 #dealer-hand {
   justify-content: center;
@@ -35,69 +39,66 @@ h3 {
   margin-bottom: 20px;
 }
 
-/*Spacing of the game buttons increased*/
+/* === Game Button Styles === */
+/* Add vertical spacing to game buttons */
 #game-buttons {
   margin-top: 15px;
   margin-bottom: 15px;
 }
 
-/*Spacing for the results*/
+/* === Results Section Styles === */
+/* Add vertical spacing to results heading */
 #win-or-lose-heading {
   margin-top: 5px;
-  margin-top: 30px;
+  margin-bottom: 30px; /* Corrected duplicate margin-top */
 }
 
-/*Deal button spacing*/
+/* === Button Styles === */
+/* Style deal, hit, and stand buttons with vertical spacing and font size */
 #deal-button,
 #hit-button,
 #stand-button {
   margin-bottom: 15px;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
-/*Make sure the hit and stand buttons are intially hidden*/
+/* === Initial Button Visibility === */
+/* Initially hide hit and stand buttons */
 #hit-button,
 #stand-button {
   display: none;
 }
 
-/*Score's size increased*/
+/* === Score Styles === */
+/* Increase font size for player and dealer scores */
 #player-score,
 #dealer-score {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
-/*Media queries to keep the card images, scores and buttons correctly sized*/
-@media only screen and (min-width: 576px) {
+/* === Media Queries === */
+/* Adjust image sizes and element font sizes for larger screens */
+
+/* Medium screens: Adjust card image size */
+@media only screen and (min-width: 900px) {
   #player-hand img,
   #dealer-hand img {
-    width: 120px;
+    width: 150px;
   }
 }
-@media only screen and (min-width: 700px) {
-  #player-hand img,
-  #dealer-hand img {
-    width: 120px;
-  }
-}
-@media only screen and (min-width: 1000px) {
+
+/* Large screens: Adjust card image size and font sizes */
+@media only screen and (min-width: 1441px) {
   #player-hand img,
   #dealer-hand img {
     width: 200px;
   }
-}
-@media only screen and (min-width: 1500px) {
-  #player-hand img,
-  #dealer-hand img {
-    width: 250px;
-  }
-  #player-score,
-  #dealer-score {
-    font-size: 3rem;
-  }
   #deal-button,
   #hit-button,
-  #stand-button {
+  #stand-button,
+  h2,
+  #player-score,
+  #dealer-score {
     font-size: 3rem;
   }
 }
