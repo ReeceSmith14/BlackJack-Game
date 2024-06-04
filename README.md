@@ -4,15 +4,16 @@
 
 This is my take on the classic game of [BlackJack](https://en.wikipedia.org/wiki/Blackjack). It was crafted with a user-centric approach, utilising the framework [Bootstrap](https://getbootstrap.com/), languages such as [HTML5](https://en.wikipedia.org/wiki/HTML), [CSS3](https://en.wikipedia.org/wiki/CSS) & [JavaScript](https://en.wikipedia.org/wiki/JavaScript), and libraries & programs including [Google Fonts](https://fonts.google.com/), [jQuery](https://jquery.com/), [Git](https://git-scm.com/) and [GitHub](https://github.com/)
 
-
-![Mockup image of my game](https://github.com/ReeceSmith14/Personal-Portfolio-Website/assets/61851890/28f73e43-08c4-4200-8d36-cb81eb5bba22)
+![Mockup image of my game](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/e1038a51-c600-4c0e-abd4-b4cadb1190fe)
 
 ## About
 
 ### Overview
+
 Blackjack, also known as 21, is a popular card game played in casinos around the world. The objective of the game is simple: beat the dealer by having a hand value closest to 21 without going over.
 
 ### How to Play
+
 Card Values: In Blackjack, cards 2 through 10 are worth their face value, face cards (King, Queen, and Jack) are each worth 10 points, and Aces can be worth either 1 or 11 points, depending on which value is more advantageous for the hand.
 
 ### Gameplay:
@@ -27,7 +28,6 @@ Card Values: In Blackjack, cards 2 through 10 are worth their face value, face c
 ### Specific Game Rules For My Version
 
 - No Money/Chips: This version of Blackjack is designed purely for entertainment and does not involve any form of betting or use of chips.
-
 - No Splitting: In traditional Blackjack, if a player is dealt two cards of the same value, they have the option to split them into two separate hands. However, in this version, splitting is not allowed.
 
 ## Table of Contents
@@ -38,6 +38,7 @@ Card Values: In Blackjack, cards 2 through 10 are worth their face value, face c
   - [Structure](#structure)
   - [Skeleton](#skeleton)
   - [Surface](#surface)
+- [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
 - [Bugs & Improvements](#bugs-&-improvements)
@@ -116,7 +117,7 @@ At every stage of the design, the main focus is on creating a seamless and enjoy
 
 #### Initial Game State
 
-[Initial Game State Wireframe](https://ibb.co/kg18Stj)
+[Initial Game State Wireframe]()
 
 [Initial Game State Wireframe - Smaller Screen](https://ibb.co/BrLVd78)
 
