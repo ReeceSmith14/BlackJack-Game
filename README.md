@@ -117,9 +117,13 @@ At every stage of the design, the main focus is on creating a seamless and enjoy
 
 #### Initial Game State
 
-[Initial Game State Wireframe]()
+##### Game Initial State Wireframe
 
-[Initial Game State Wireframe - Smaller Screen](https://ibb.co/BrLVd78)
+![Game Initial State Wireframe](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/c30c041f-9847-4d71-a376-1c114de78d28)
+
+##### Game Initial State Wireframe - Smaller Screens
+
+![Game Initial State Wireframe - Smaller Screen](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/c9ae90f4-1152-4f41-b71e-5daf86784c30)
 
 ##### Key Points
 
@@ -131,9 +135,13 @@ At every stage of the design, the main focus is on creating a seamless and enjoy
 
 #### After Deal State
 
-[After Deal State Wireframe](https://ibb.co/nMbXWSV)
+##### After Deal State Wireframe
 
-[After Deal State Wireframe - Smaller Screen](https://ibb.co/DpNGyfb)
+![After deal state](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/9606acbc-06e0-4090-98ca-735d3437aeec)
+
+##### After Deal State Wireframe - Smaller Screen
+
+![After deal state - mobile](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/92c6897b-b7f8-4844-b976-bef0f967e14d)
 
 ##### Key Points
 
@@ -145,9 +153,13 @@ At every stage of the design, the main focus is on creating a seamless and enjoy
 
 #### End Game State
 
-[End Game State Wireframe](https://ibb.co/rFBn4Nh)
+##### End Game State Wireframe
 
-[End Game State Wireframe - Smaller Screen](https://ibb.co/WxfTPmv)
+![Game end state](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/49052961-5646-4a41-ac50-76d0d2bdbd54)
+
+##### End Game State Wireframe - Smaller Screen
+
+![Game end state - mobile](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/0473a1b1-19b1-4d2f-aaa2-1a7c01eda9a7)
 
 ##### Key Points
 
@@ -187,29 +199,35 @@ This typography scheme is designed to enhance the overall aesthetic and usabilit
 
 The use of these images ensures clarity and helps players easily understand the state of the game, while also adding an authentic touch to the gameplay environment.
 
-### Header
+#### Initial Game State
 
-![Image of my header](https://github.com/ReeceSmith14/Personal-Portfolio-Website/assets/61851890/c92043d2-7e0b-44e2-be23-857ff18aa63d)
+##### Game Initial State
 
-![Image of header on smaller screens](https://github.com/ReeceSmith14/Personal-Portfolio-Website/assets/61851890/03d49db7-b8bf-42df-ae2b-90f065c3394c)
+![Initial game state - mockup](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/88c0afe9-a3bd-4a94-89cc-1f6b1b2af788)
 
-### About Me Section
+##### Game Initial State - Smaller Screens
 
-![Image of about me section](https://github.com/ReeceSmith14/Personal-Portfolio-Website/assets/61851890/4fede8b4-8ac6-4d8d-8854-d8485cd2e866)
+![Initial game state - mockup - mobile](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/289a5e88-8691-495d-ad67-b76010ef9315)
 
-![Image of about me section on smaller screens](https://github.com/ReeceSmith14/Personal-Portfolio-Website/assets/61851890/4d4e9251-f3d4-44ec-9068-1afea619e24f)
+#### After Deal State
 
-### Projects Section
+##### After Deal State 
 
-![Image of project section](https://github.com/ReeceSmith14/Personal-Portfolio-Website/assets/61851890/48b92294-c08e-44ec-a1ed-96bbb68d04b4)
+![After deal state - mockup](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/ae13de19-04de-41ac-a6b0-eab5bfc619f8)
 
-![Image of projects section on smaller screen](https://github.com/ReeceSmith14/Personal-Portfolio-Website/assets/61851890/94e04771-e324-433c-b9a0-b9a8832d86c3)
+##### After Deal State - Smaller Screen
 
-### Contact Section
+![After deal state - mockup - mobile](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/37f18094-a1c8-4874-a52a-0e54555a612d)
 
-![Image of contact section](https://github.com/ReeceSmith14/Personal-Portfolio-Website/assets/61851890/934c8e18-8ce4-40da-8d3a-76c5ab2e6c12)
+#### End Game State
 
-![Image of contact section on smaller screens](https://github.com/ReeceSmith14/Personal-Portfolio-Website/assets/61851890/727f00e2-b074-4f10-9e0f-99b9b2d40bc5)
+##### End Game State 
+
+![Game end state - mockup](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/3e184dd0-100b-4da7-96a5-597a2769f79e)
+
+##### End Game State - Smaller Screen
+
+![Game end state - mockup - mobile](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/d12a3584-5fae-4469-858a-3a63d40a5e29)
 
 ## Features
 
