@@ -108,7 +108,7 @@ At every stage of the design, the main focus is on creating a seamless and enjoy
 - Hit and Stand Buttons: Located below the dealer's and player's hands, these buttons allow players to either take another card (Hit) or keep their current hand (Stand).
 - Deal Button: Positioned below the game controls, this button starts a new game round, dealing cards to both the dealer and the player.
 
-### Navigation and Layout
+### Navigation and Layout
 
 - The overall layout is designed to be intuitive and user-friendly, with a clear division between the dealer's and player's sections.
 - Navigation is straightforward, focusing on gameplay without any unnecessary elements, ensuring a smooth and enjoyable experience.
