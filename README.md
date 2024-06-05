@@ -159,22 +159,33 @@ At every stage of the design, the main focus is on creating a seamless and enjoy
 
 #### Colours
 
-- The primary colours for the website are Hex: #0A2239 and Hex: #132E32. This dark colour was chosen as I typically operate my IDEs (Integrated Development Environment) in night mode and these colour reminded me of that.
-- Secondary colours of Hex: #53A2BE and Hex: #1D84B5 are used to create contrast between the sections on the page.
-- The text is mostly white but some black has been used depending on what gives the best contrast.
-- When hovered navigation bar links show as Hex: #53A2BE, contact me button shows as HEX: #53A2BE with a white background and project links show as black.
+- The primary colour for the game is a black background. This choice is inspired by the elegant and timeless look of casinos, providing a sleek and immersive gaming experience.
+
+- The font colour used is gold, which complements the black background perfectly and adds a touch of luxury and sophistication reminiscent of high-stakes casino environments.
+
+- Buttons in the game feature a dynamic colour scheme to enhance user interaction. Initially, they have a black background with gold font. Upon hovering, the buttons invert to display a gold background with black font. This contrast not only aligns with the overall aesthetic but also ensures clear visibility and an engaging user interface.
+
+- The chosen colour palette of black and gold not only evokes the classic casino feel but also provides excellent contrast, making the text and interactive elements stand out sharply against the background.
+
+This colour scheme aims to create a visually appealing and intuitive interface, enhancing the overall user experience by drawing inspiration from traditional casino aesthetics.
 
 #### Typography
 
-- The navigation bar, about section heading and  project heading all used the display font "Barriecito". As these are the only times this font is being used it will stand out from all other text.
-- Vast majority of text was written in the sans-serif font "Open Sans". This is a simple clean font that is easy to read.
+- The title/h1 tag use the serif [Google font](https://fonts.google.com/specimen/Playfair+Display) "Playfair Display". This choice ensures that the title stands out prominently, adding a touch of elegance and making it the focal point of the interface.
+
+- For all other text elements, the sans-serif [Google font](https://fonts.google.com/specimen/Roboto?query=Roboto) "Roboto" is used. This font is selected for its clean and modern appearance, providing excellent readability and a smooth user experience.
+
+- The combination of "Playfair Display" and "Roboto" creates a harmonious balance, with the distinct and stylish title font drawing attention while the simple and readable body font ensures that the game's buttons, and other textual elements are easily understandable.
+
+This typography scheme is designed to enhance the overall aesthetic and usability of the game, making important elements stand out while maintaining clarity and readability throughout.
 
 #### Images
 
-- As the website is a personal portfolio, portraits with no background have been used.
-- For the projects, code snippet screen shots have been used. If the images are clicked a tab will open to the associated GitHub repository.
+- The game features card images to represent both the player's and the dealer's hands. These images provide a visual representation of the cards in play, enhancing the gaming experience.
 
-#### Call To Action
+- Initially, a blank or back-of-card image is used to indicate that no cards have been dealt. This image also serves as the dealer's "hole card" when the game begins, maintaining the element of suspense typical of a real Blackjack game.
+
+The use of these images ensures clarity and helps players easily understand the state of the game, while also adding an authentic touch to the gameplay environment.
 
 ### Header
 
