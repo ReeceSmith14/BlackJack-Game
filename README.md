@@ -290,6 +290,15 @@ The use of these images ensures clarity and helps players easily understand the 
 - [Git](https://git-scm.com/) was used as the version control system.
 - [GitHub](https://github.com/) for the git repository hosting.
 - [Placeit](https://placeit.net/) used to produce game mockup used in this README.md
+- [Sublime Text](https://www.sublimetext.com/) for writing my code.
+- [Atom](https://atom-editor.cc/) used for writing my README.md
+- [Beautifier.io](https://beautifier.io) to keep code tidy and to industry standard
+- [Coolors](https://coolors.co/contrast-checker/000000-ffd700) to check colour contrast
+- [HTML Validator](https://validator.w3.org) to validate HTML
+- [CSS Validator](https://validator.w3.org) to validate CSS
+- [JSHint](https://jshint.com) to validate JS
+- [Google DevTools](https://developer.chrome.com/docs/devtools) to test my games responsiveness.
+- [PageSpeed Insights](https://pagespeed.web.dev/) to test games performance
 
 ## Testing
 
@@ -395,38 +404,6 @@ git add .
 git commit -m "commit message"
 git push origin main
 ```
-
-
-## Credits
-
-### Media
-
-- Image hosting of the wireframe screenshots was done through [ImgBB](https://imgbb.com/)
-- For icons on the webpage I used the [Font Awesome](https://fontawesome.com/) library
-- [Online-Convert.com](https://image.online-convert.com/convert-to-ico) to convert a .png to a .ico for the favicon.
-- To make the website mockup used in this README.md I used [Placeit](https://placeit.net/)
-
-### Code
-
-- [W3Schools](https://www.w3schools.com/bootstrap/bootstrap_navbar.asp) tutorial on a bootstrap collapsing navigation bar was used as a guide when constructing my own.
-
-### Acknowledgements
-
-- [Code Institute](https://codeinstitute.net/): For their tutorials, guidance, templates, examples, and mentorship.
-- [GitHub](https://github.com/): For their [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf).
-- [W3Schools](https://www.w3schools.com/): For their tutorials, examples and reference sheets.
-- [Markdown Guide](https://www.markdownguide.org/cheat-sheet/): For their cheatsheet on markdown.
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Credits
