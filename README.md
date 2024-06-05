@@ -211,7 +211,7 @@ The use of these images ensures clarity and helps players easily understand the 
 
 #### After Deal State
 
-##### After Deal State 
+##### After Deal State
 
 ![After deal state - mockup](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/ae13de19-04de-41ac-a6b0-eab5bfc619f8)
 
@@ -221,7 +221,7 @@ The use of these images ensures clarity and helps players easily understand the 
 
 #### End Game State
 
-##### End Game State 
+##### End Game State
 
 ![Game end state - mockup](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/3e184dd0-100b-4da7-96a5-597a2769f79e)
 
@@ -231,20 +231,65 @@ The use of these images ensures clarity and helps players easily understand the 
 
 ## Features
 
+### Features Across the Game
+
+#### Game Interface
+
+- Dealer's Hand and Player's Hand: Both the dealer's and player's hands are displayed prominently on the game screen. Each hand shows the respective cards dealt.
+
+- Score Tracker: A score tracker is displayed under each hand, updating dynamically as cards are dealt.
+
+- Hit Button: Allows the player to draw an additional card to their hand.
+
+- Stand Button: Ends the player's turn, allowing the dealer to play. The dealer will keep picking up until they have a score of 17 or higher.
+
+- Deal Button: Used to start a new game, resetting the hands and scores.
+
+#### Game Outcomes
+
+- The game calculates and displays the result once the player's and dealer's turns are complete. The result indicates whether the player wins, loses, or ties.
+
+#### Responsiveness
+
+- The game interface is fully responsive, adapting seamlessly to different screen resolutions. This ensures an optimal user experience whether playing on a desktop, tablet, or mobile device.
+
+- Media queries and [Bootstrap](https://getbootstrap.com/) have been used to maintain the interface's usability and aesthetic appeal across various devices.
+
+#### Accessibility
+
+- Font sizes are set in rem units to respect user preferences for text scaling, ensuring readability for users with visual impairments.
+
+- High contrast between the text and background improves readability and makes the game accessible to users with visual stress or colour blindness.
+
+### Features Specific to Gameplay
+
+#### Core Gameplay
+
+- Card Dealing: The game simulates the dealing of cards, visually displaying them in the player’s and dealer’s hands.
+
+- Score Calculation: The score for each hand is calculated and displayed in real-time, allowing players to make informed decisions.
+
+- Game Logic: Implements standard Blackjack rules, including automatic dealer play, to determine game outcomes accurately.
+
 ### Future Features
+
+- Betting System: Add the ability for players to place bets on their hands, adding a strategic element to the game.
+
+- Splitting: Enable the player to split their hand into two separate hands if they receive two cards of the same value, adding depth to the gameplay.
+
+- Doubling Down: Allow the player to double their bet in exchange for committing to stand after receiving one additional card, increasing the strategic options available.
 
 ## Technologies Used
 
-- [Online-Convert.com](https://image.online-convert.com/convert-to-ico) to convert a .png to a .ico. This .ico file was used as a favicon to appear next to the title in the browser tab.
-- [HTML](https://en.wikipedia.org/wiki/HTML) for the website content.
+- [HTML](https://en.wikipedia.org/wiki/HTML) for the game content.
 - [Bootstrap](https://getbootstrap.com/) framework for the initial styling and responsiveness.
-- [CSS](https://en.wikipedia.org/wiki/CSS) to further style and customise the webpage.
-- [Google Fonts](https://fonts.google.com/) to style the website fonts.
-- [Font Awesome](https://fontawesome.com/) for the icons used on the webpage.
+- [CSS](https://en.wikipedia.org/wiki/CSS) to further style and customise the game.
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) for core game mechanics, user interactions, real-time updates, and dynamic interface. game.
+- [jQuery](https://jquery.com/) for event handling, DOM selection, and manipulation
+- [Google Fonts](https://fonts.google.com/) to style the game fonts.
 - [Git](https://git-scm.com/) was used as the version control system.
 - [GitHub](https://github.com/) for the git repository hosting.
-- [ImgBB](https://imgbb.com/) to host the wireframe screenshots.
-- [Placeit](https://placeit.net/) used to produce website mockup used in this README.md
+- [Placeit](https://placeit.net/) used to produce game mockup used in this README.md
 
 ## Testing
 
