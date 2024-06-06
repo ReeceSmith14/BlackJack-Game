@@ -304,16 +304,18 @@ The use of these images ensures clarity and helps players easily understand the 
 
 | Test Description | Expected Outcome | Outcome | Action | Re-test |
 | --- | --- | --- | --- | --- |
-| Social Media Links | Links open to my social media pages on a new tab | Passed | N/A | N/A |
-| Navigation Links | Links smoothly scroll page to corresponding section | Failed. Contact link didn't work | href attribute of anchor tag updated to the correct element id. "contact-section" | Passed |
-| Contact Me Button | Link smoothly scrolls page to corresponding section | Failed. Contact link didn't work | href attribute of anchor tag updated to the correct element id. "contact-section" | Passed |
-| Project Title & Thumbnail Links | Links open to respective GitHub repositories in a new tab | Passed | N/A | N/A |
-| Navigation Bar Responsiveness | On smaller screens the navigation links should become a drop down menu | Passed | N/A | N/A |
-| Hover States | All clickable links (minus project thumbnails) should change appearance on hover | Passed | N/A | N/A |
-| Responsiveness On Larger Screens | At 1399px elements should stop expanding | Passed | N/A | N/A |
-| Responsiveness On Smaller Screens | Certain elements should form columns rather than rows | Passed | N/A | N/A |
-| Contact Form Validation | Name, Email & Message inputs should be required. Name input should only accept text, Email should only only accept valid emails, Number should only accept numbers & Message can accept anything. Information should be submitted to https://formdump.codeinstitute.net | Passed | N/A | N/A |
-| Browser Compatibility | Tested site using browsers Firefox, Safari, Chrome and Edge. All above tests should pass. | Failed. Images failed to load on Safari on my MacBook Air. webp format  isn't supported by Safari 3.1 - 13.1. webp started be supported from Safari 14 - 15.6, so on newer IOS devices images will load fine. This was confirmed using [caniuse.com](https://caniuse.com/?search=webp)| N/A | N/A |
+| Responsiveness on smaller screens | Dealer & Player hands, scores and game buttons should stack in one column | Passed | N/A | N/A |
+| Responsiveness on medium screens | Dealer & Player hands and scores should appear next to each other rather than stacked. Each hand will consist of rows of two cards. | Passed | N/A | N/A |
+| Responsiveness on large screens | Dealer & Player hands and scores should appear next to each other rather than stacked. Each hand will consist of rows of three cards. | Failed. Hands defaulted to rows of two cards| media queries adjusted so that the width of the cards was small enough to allow for three cards | Passed |
+| Responsiveness on extra large screens | Font and card image size should adjust to be big enough on larger screens | Passed | N/A | N/A |
+| Deal button | Two cards are dealt to each the player and dealer. Dealer should have one card face down. Player's score should be shown. Hit and Stand button should appear. Re-pressing the Deal button re-starts the game| Passed | N/A | N/A |
+| Stand button | Hides the Hit button. Dealer's facedown / hole card is shown. Dealer hits until they have 17 or more. | Passed | N/A | N/A |
+| Hit button | Player receives another card | Passed | N/A | N/A |
+| Scores | The total value of the hands should be shown in score section. This should update dynamically with every new card that is added to the game. Dealers hand should only show a score when the hole card is turned over. If the player is dealt 21/Blackjack the Hit button should be hidden. If the player's score goes over 21 the hit and stand buttons should be hidden | Failed. Score wouldn't show 21 if a player was dealt a Blackjack. | The deal function was adjusted so that the score was calculated before the value was added to the DOM | Passed |
+| Results | Results should appear after the game has finished | Passed | N/A | N/A |
+| Browser Compatibility | Tested game using browsers Firefox, Safari, Chrome and Edge. All above tests should pass. | Failed. Images failed to load on Safari on my MacBook Air. webp format isn't supported by Safari 3.1 - 13.1. webp started be supported from Safari 14 - 15.6, so on newer IOS devices images will load fine. This was confirmed using [caniuse.com](https://caniuse.com/?search=webp)| N/A | N/A |
+|Colours|||||
+|Performance| The games performance score should be at least 90 according to [PageSpeed Insights](https://pagespeed.web.dev/) | Failed. Performance score of 65 achieved | Image format changed from png to webp ||
 
 ### Testing User Stories
 
@@ -354,6 +356,10 @@ CSS was validated using [The W3C CSS Validation Services](https://jigsaw.w3.org/
 HTML was validated using [Markup Validation Service](https://validator.w3.org)
 
 ![valid-html](https://github.com/ReeceSmith14/Personal-Portfolio-Website/assets/61851890/3d3868a3-087d-4a8f-886f-f1deb6cf5b2b)
+
+#### JavaScript
+
+HTML was validated using [Markup Validation Service](https://validator.w3.org)
 
 ## Deployment
 
@@ -405,6 +411,7 @@ git commit -m "commit message"
 git push origin main
 ```
 
+### Bugs & Improvements
 
 ## Credits
 
@@ -421,9 +428,3 @@ git push origin main
 ### Acknowledgements
 
 - General revision on array methods provided by [w3schools.com](https://www.w3schools.com/js/js_array_methods.asp)
-
-- Refresher on testing wih the Jest framework provided by [freeCodeCamp.org](https://www.freecodecamp.org/) in this [YouTube video](https://www.youtube.com/watch?v=IPiUDhwnZxA)
-
-- Reminder of matchers provided by [Jest.io](https://jestjs.io/docs/using-matchers)
-
-- Reminder of mock functions by [Jest.io](https://jestjs.io/docs/mock-functions)
