@@ -10,8 +10,6 @@ body {
 /* Fonts for h1, h2, h3, and buttons */
 h1 {
   font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>; /* Specify appropriate font weight */
   font-style: normal;
 }
 h2,
