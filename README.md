@@ -334,21 +334,17 @@ The game interface dynamically updates to show the player's hand value and the d
 
 ### Code Validation
 
-#### CSS
-
-CSS was validated using [The W3C CSS Validation Services](https://jigsaw.w3.org/css-validator/)
-
-![valid-css](https://github.com/ReeceSmith14/Personal-Portfolio-Website/assets/61851890/a91c8f78-50a3-484f-8acb-41d4044ce4de)
-
 #### HTML
 
 HTML was validated using [Markup Validation Service](https://validator.w3.org)
 
-![valid-html](https://github.com/ReeceSmith14/Personal-Portfolio-Website/assets/61851890/3d3868a3-087d-4a8f-886f-f1deb6cf5b2b)
+#### CSS
+
+CSS was validated using [The W3C CSS Validation Services](https://jigsaw.w3.org/css-validator/)
 
 #### JavaScript
 
-HTML was validated using [Markup Validation Service](https://validator.w3.org)
+JavaScript was validated using [JSHint](https://jshint.com)
 
 ## Deployment
 

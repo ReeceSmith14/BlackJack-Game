@@ -26,8 +26,8 @@ createDeck = () => {
                 image: `assets/images/cards/${value}-${suit}.webp`
             };
             deck.push(card);
-        };
-    };
+        }
+    }
     shuffleDeck(deck);
     return deck;
 };
@@ -42,7 +42,7 @@ shuffleDeck = deck => {
         let temp = deck[i];
         deck[i] = deck[randomNumber];
         deck[randomNumber] = temp;
-    };
+    }
     return deck;
 };
 
@@ -85,7 +85,7 @@ let deal = () => {
     // Add both players cards to index.html
     for (let i = 0; i < 2; i++) {
         $("#player-hand").append(`<img class="col-md-3" src="${playerHand[i].image}">`);
-    };
+    }
 
     // Check if player is dealt 21
     playerTotal = calculateHandTotal(playerHand);
@@ -178,8 +178,8 @@ calculateHandTotal = hand => {
             total += 10;
         } else {
             total += card.value;
-        };
-    };
+        }
+    }
 
     // For loop to add up the ace cards
     // Aces are either = to 1 or 11 depending on what benefits the player more
@@ -189,8 +189,8 @@ calculateHandTotal = hand => {
             total += 11;
         } else {
             total += 1;
-        };
-    };
+        }
+    }
 
     return total;
 };
