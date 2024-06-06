@@ -41,7 +41,6 @@ Card Values: In Blackjack, cards 2 through 10 are worth their face value, face c
 - [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Testing](#testing)
-- [Bugs & Improvements](#bugs-&-improvements)
 - [Deployment](#deployment)
 - [Credits](#credits)
   - [Media](#media)
@@ -353,7 +352,7 @@ This project was developed  using a mixture of IDEs, committed to git initially 
 The IDEs used were:
 
 - [Atom](https://atom-editor.cc/) Used primarily to edit the README.md becuase of it built-in markdown preview
-- [Sublime Text](https://www.sublimetext.com/index2) Used to edit HTML and CSS.
+- [Sublime Text](https://www.sublimetext.com/index2) Used to edit HTML, CSS and JS.
 
 ### Deploying from GitHub
 
@@ -395,9 +394,6 @@ git add .
 git commit -m "commit message"
 git push origin main
 ```
-
-### Bugs & Improvements
-
 ## Credits
 
 ### Media
