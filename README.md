@@ -315,34 +315,22 @@ The use of these images ensures clarity and helps players easily understand the 
 | Scores | The total value of the hands should be shown in score section. This should update dynamically with every new card that is added to the game. Dealers hand should only show a score when the hole card is turned over. If the player is dealt 21/Blackjack the Hit button should be hidden. If the player's score goes over 21 the hit and stand buttons should be hidden | Failed. Score wouldn't show 21 if a player was dealt a Blackjack. | The deal function was adjusted so that the score was calculated before the value was added to the DOM | Passed |
 | Results | Results should appear after the game has finished | Passed | N/A | N/A |
 | Browser Compatibility | Tested game using browsers Firefox, Safari, Chrome and Edge. All above tests should pass. | Failed. Images failed to load on Safari on my MacBook Air. webp format isn't supported by Safari 3.1 - 13.1. webp started be supported from Safari 14 - 15.6, so on newer IOS devices images will load fine. This was confirmed using [caniuse.com](https://caniuse.com/?search=webp)| N/A | N/A |
-|Colours|||||
-|Performance| The games performance score should be at least 90 according to [PageSpeed Insights](https://pagespeed.web.dev/) | Failed. Performance score of 65 achieved | Image format changed from png to webp ||
+|Colours| The colour contrast should score at least 14 according to [Coolors](https://coolors.co/contrast-checker/000000-ffd700) | Passed | N/A | N/A |
+|Performance| The games performance score should be at least 80 according to [PageSpeed Insights](https://pagespeed.web.dev/) on both mobile and desktop| Failed. Performance score of 65 achieved on mobile. 97 on desktop| Image format changed from png to webp | Passed |
 
 ### Testing User Stories
 
->- Quickly understand the purpose of the portfolio  website.
-
-Name, role and tagline are displayed as soon as the page loads. This hints towards what the page is about and just underneath is an about section with more information.
-
 >- Navigate easily with a user-friendly layout.
 
-Navigation bar is on display at the top of the page and is fixed so it's always in view. This allows the user to navigate to any section quickly no matter where they are on the page.
+The Blackjack game interface is designed with simplicity and usability in mind. The navigation is intuitive, with clear buttons. The main controls (deal, hit, stand, are only visible when they are needed, ensuring that players can easily understand and interact with the game.
 
->- Assess the developer's skills and experiences.
+>- Have a smooth and enjoyable gameplay experience.
 
-About section clearly lays out skills and experiences. The user is also prompted to view the projects just below this section. Again the navigation bar is on display should the user want to move trough the page without scrolling
+Gameplay runs smoothly without any noticeable lag or interruptions. Animations for dealing cards and updating the game state are fluid and responsive. The design is visually appealing, contributing to an overall enjoyable gaming experience. Extensive testing across different browsers and devices (desktop, tablet, and mobile) ensures consistent performance and user experience.
 
-> - Learn about the developer through an engaging "About Me" section.
+>- See real-time updates of my hand value and the dealer's hand.
 
-I would like to think that my about section is engaging and I tried my best to make it more personal by including a portrait.
-
->- Access external profiles like LinkedIn or GitHub for more information.
-
-Links to my LinkedIn and GitHub are included in both the fixed navigation bar and also in the contact section at the bottom.
-
->- Find easily accessible contact information.
-
-There is a contact section which includes various ways to contact me, including: LinkedIn, GitHub, phone, email and contact form.
+The game interface dynamically updates to show the player's hand value and the dealer's hand value in real-time. When cards are dealt or actions are taken, the values are recalculated and displayed immediately. This provides players with accurate and up-to-date information, which is crucial for making informed decisions during the game.
 
 ### Code Validation
 
