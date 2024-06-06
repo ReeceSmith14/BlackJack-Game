@@ -7,7 +7,7 @@ let deck = [];
 const blankCard = {
     value: 0,
     suit: null,
-    image: `assets/images/cards/BACK.png`
+    image: `assets/images/cards/BACK.webp`
 };
 
 
@@ -23,7 +23,7 @@ createDeck = () => {
             let card = {
                 value: value,
                 suit: suit,
-                image: `assets/images/cards/${value}-${suit}.png`
+                image: `assets/images/cards/${value}-${suit}.webp`
             };
             deck.push(card);
         };

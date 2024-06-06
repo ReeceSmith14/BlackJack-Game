@@ -299,6 +299,7 @@ The use of these images ensures clarity and helps players easily understand the 
 - [JSHint](https://jshint.com) to validate JS
 - [Google DevTools](https://developer.chrome.com/docs/devtools) to test my games responsiveness.
 - [PageSpeed Insights](https://pagespeed.web.dev/) to test games performance
+- [Pixelied - PNG to WEBP Converter](https://pixelied.com/convert/png-converter/png-to-webp) to convert my .png card images to .webp
 
 ## Testing
 
