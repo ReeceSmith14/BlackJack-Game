@@ -98,7 +98,7 @@ let deal = () => {
     // Add player score to index
     $("#player-score").text(`Score: ${playerTotal}`);
 
-    return deck
+    return deck ;
 };
 
 $("#deal-button").click(deal);
@@ -122,7 +122,7 @@ let hit = () => {
     // Update players score
     $("#player-score").text(`Score: ${playerTotal}`);
 
-    return deck
+    return deck ;
 };
 
 $("#hit-button").click(hit);
