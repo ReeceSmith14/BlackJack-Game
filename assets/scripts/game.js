@@ -98,6 +98,7 @@ let deal = () => {
     // Add player score to index
     $("#player-score").text(`Score: ${playerTotal}`);
 
+    return deck
 };
 
 $("#deal-button").click(deal);
@@ -121,6 +122,7 @@ let hit = () => {
     // Update players score
     $("#player-score").text(`Score: ${playerTotal}`);
 
+    return deck
 };
 
 $("#hit-button").click(hit);
@@ -220,4 +222,6 @@ determineWinner = () => {
         // It's a tie
         $("#win-or-lose-heading").text("It's a tie!");
     }
+
+    deck = [];
 };
