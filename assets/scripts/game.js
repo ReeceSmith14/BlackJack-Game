@@ -26,8 +26,8 @@ createDeck = () => {
                 image: `assets/images/cards/${value}-${suit}.webp`
             };
             deck.push(card);
-        }
-    }
+        };
+    };
     shuffleDeck(deck);
     return deck;
 };
@@ -42,7 +42,7 @@ shuffleDeck = deck => {
         let temp = deck[i];
         deck[i] = deck[randomNumber];
         deck[randomNumber] = temp;
-    }
+    };
     return deck;
 };
 
@@ -85,7 +85,7 @@ let deal = () => {
     // Add both players cards to index.html
     for (let i = 0; i < 2; i++) {
         $("#player-hand").append(`<img class="col-md-3" src="${playerHand[i].image}">`);
-    }
+    };
 
     // Check if player is dealt 21
     playerTotal = calculateHandTotal(playerHand);
@@ -93,7 +93,7 @@ let deal = () => {
     if (playerTotal === targetTotal) {
         // Hide the hit button
         $("#hit-button").hide();
-    }
+    };
 
     // Add player score to index
     $("#player-score").text(`Score: ${playerTotal}`);
@@ -117,7 +117,7 @@ let hit = () => {
     playerTotal = calculateHandTotal(playerHand);
     if (playerTotal > targetTotal) {
         determineWinner();
-    }
+    };
 
     // Update players score
     $("#player-score").text(`Score: ${playerTotal}`);
@@ -150,7 +150,7 @@ let stand = () => {
         let lastCard = dealerHand.length - 1;
         $("#dealer-hand").append(`<img class="col-md-3" src="${dealerHand[lastCard].image}">`);
         dealerTotal = calculateHandTotal(dealerHand);
-    }
+    };
 
     // Add dealer score to index
     $("#dealer-score").text(`Score: ${dealerTotal}`);
@@ -180,8 +180,8 @@ calculateHandTotal = hand => {
             total += 10;
         } else {
             total += card.value;
-        }
-    }
+        };
+    };
 
     // For loop to add up the ace cards
     // Aces are either = to 1 or 11 depending on what benefits the player more
@@ -191,8 +191,8 @@ calculateHandTotal = hand => {
             total += 11;
         } else {
             total += 1;
-        }
-    }
+        };
+    };
 
     return total;
 };
@@ -221,7 +221,7 @@ determineWinner = () => {
     } else {
         // It's a tie
         $("#win-or-lose-heading").text("It's a tie!");
-    }
+    };
 
     deck = [];
 };
