@@ -337,13 +337,19 @@ The game interface dynamically updates to show the player's hand value and the d
 
 HTML was validated using [Markup Validation Service](https://validator.w3.org)
 
+![Valid HTML](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/9d46c5c9-3433-481a-8ada-fcf1cf22c151)
+
 #### CSS
 
 CSS was validated using [The W3C CSS Validation Services](https://jigsaw.w3.org/css-validator/)
 
+![Valid CSS](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/b4d80dea-c9da-4c82-b8b2-b0ebd8189c74)
+
 #### JavaScript
 
 JavaScript was validated using [JSHint](https://jshint.com)
+
+![Valid JS](https://github.com/ReeceSmith14/BlackJack-Game/assets/61851890/d29c2216-bc9a-4d8f-961b-89e483e59746)
 
 ## Deployment
 
@@ -357,7 +363,7 @@ The IDEs used were:
 ### Deploying from GitHub
 
 1. Log into GitHub account.
-2. Go to your repositories and select Personal-Portfolio-Website.
+2. Go to your repositories and select BlackJack-Game.
 3. At the top of the screen you'll find "Settings" in the same navigation bar as "Code", "Issues" etc.
 4. Open "Pages".
 5. Under "Build and deployment", change source to "Deploy from a branch".
